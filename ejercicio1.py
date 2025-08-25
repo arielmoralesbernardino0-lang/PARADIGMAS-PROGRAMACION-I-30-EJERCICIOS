@@ -7,8 +7,7 @@ class Galleta:
     def hornear(self):
         print(f"Esta {self.nombre} ha sido horneada en forma de {self.forma}.")
         print("¡Buen provecho!")
-xd
-dgjklñ
+
 # Ejemplo de uso
 galleta_1 = Galleta("galleta con chispas de chocolate", "estrella")
 galleta_1.hornear()
