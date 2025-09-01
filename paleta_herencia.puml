@@ -1,0 +1,26 @@
+@startuml
+class Paleta {
+    - sabor: str
+    - precio: float
+    + __init__(sabor: str, precio: float)
+    + mostrar_informacion()
+    + precio_final()
+}
+
+class PaletaAgua {
+    - base_agua: bool
+    + __init__(sabor: str, precio: float, base_agua: bool = True)
+    + mostrar_base_agua()
+    + precio_final()
+}
+
+class PaletaCrema {
+    - cremosa: bool
+    + __init__(sabor: str, precio: float, cremosa: bool = True)
+    + mostrar_base_cremosa()
+    + precio_final()
+}
+
+PaletaAgua --|> Paleta
+PaletaCrema --|> Paleta
+@enduml

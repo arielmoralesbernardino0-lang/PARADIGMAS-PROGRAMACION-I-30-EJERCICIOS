@@ -1,0 +1,27 @@
+@startuml
+class FiguraGeometrica {
+  - nombre : str
+  + calcular_area() : float
+}
+
+class Circulo {
+  - radio : float
+  + calcular_area() : float
+}
+
+class Rectangulo {
+  - base : float
+  - altura : float
+  + calcular_area() : float
+}
+
+class Triangulo {
+  - base : float
+  - altura : float
+  + calcular_area() : float
+}
+
+FiguraGeometrica <|-- Circulo
+FiguraGeometrica <|-- Rectangulo
+FiguraGeometrica <|-- Triangulo
+@enduml

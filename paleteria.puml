@@ -1,0 +1,18 @@
+@startuml
+class Paleta {
+  - sabor : str
+  - precio : float
+  + precio_final() : float
+}
+
+class PaletaAgua {
+  + precio_final() : float
+}
+
+class PaletaCrema {
+  + precio_final() : float
+}
+
+Paleta <|-- PaletaAgua
+Paleta <|-- PaletaCrema
+@enduml

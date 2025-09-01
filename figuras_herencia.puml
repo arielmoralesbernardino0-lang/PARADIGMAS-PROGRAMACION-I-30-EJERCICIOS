@@ -1,0 +1,30 @@
+@startuml
+class FiguraGeometrica {
+    - nombre: str
+    + __init__(nombre: str)
+}
+
+class Circulo {
+    - radio: float
+    + __init__(nombre: str, radio: float)
+    + calcular_area(): float
+}
+
+class Rectangulo {
+    - base: float
+    - altura: float
+    + __init__(nombre: str, base: float, altura: float)
+    + calcular_area(): float
+}
+
+class Triangulo {
+    - base: float
+    - altura: float
+    + __init__(nombre: str, base: float, altura: float)
+    + calcular_area(): float
+}
+
+Circulo --|> FiguraGeometrica
+Rectangulo --|> FiguraGeometrica
+Triangulo --|> FiguraGeometrica
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+class Personaje {
+  - nombre : str
+  - nivel : int
+  + atacar() : void
+}
+
+class Jugador {
+  - clase : str
+  + atacar() : void
+}
+
+class Enemigo {
+  - tipo : str
+  + atacar() : void
+}
+
+Personaje <|-- Jugador
+Personaje <|-- Enemigo
+@enduml

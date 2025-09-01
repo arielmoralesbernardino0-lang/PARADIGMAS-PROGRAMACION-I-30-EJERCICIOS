@@ -1,0 +1,23 @@
+@startuml
+class Personaje {
+    - nombre: str
+    - nivel: int
+    + __init__(nombre: str, nivel: int)
+    + atacar()
+}
+
+class Jugador {
+    - clase: str
+    + __init__(nombre: str, nivel: int, clase: str)
+    + usar_habilidad_especial()
+}
+
+class Enemigo {
+    - tipo: str
+    + __init__(nombre: str, nivel: int, tipo: str)
+    + gritar()
+}
+
+Jugador --|> Personaje
+Enemigo --|> Personaje
+@enduml
